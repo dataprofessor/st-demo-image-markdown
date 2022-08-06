@@ -2,6 +2,7 @@ import streamlit as st
 
 st.title('🎈 Different ways to display images')
 
+##### st.image
 st.header('1. Using `st.image`')
 
 from PIL import Image
@@ -13,9 +14,13 @@ st.code('''from PIL import Image
   st.image(img)
 ''')
 
+
+##### st.markdown
 st.header('2. Using `st.markdown`')
 
 # Source: https://pmbaumgartner.github.io/streamlitopedia/sizing-and-images.html
+from pathlib import Path
+
 def img_to_bytes(img_path):
     img_bytes = Path(img_path).read_bytes()
     encoded = base64.b64encode(img_bytes).decode()
