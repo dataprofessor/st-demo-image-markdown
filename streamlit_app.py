@@ -9,7 +9,7 @@ from PIL import Image
 img = Image.open('streamlit-logo-secondary-colormark-darktext.png')
 st.image(img)
 
-st.subheader('Code')
+st.write('**Code**')
 st.code('''from PIL import Image
   img = Image.open('streamlit-logo-secondary-colormark-darktext.png')
   st.image(img)
@@ -38,7 +38,7 @@ def img_to_html(img_path):
 
 st.markdown(img_to_html('streamlit-logo-secondary-colormark-darktext.png'), unsafe_allow_html=True)
 
-st.subheader('Code')
+st.write('**Code**')
 st.code('''# img_to_bytes and img_to_html inspired from https://pmbaumgartner.github.io/streamlitopedia/sizing-and-images.html
 import base64
 from pathlib import Path
