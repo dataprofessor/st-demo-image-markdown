@@ -5,7 +5,7 @@ st.title('🎈 Different ways to display images')
 ##### st.image
 st.header('1. Using `st.image`')
 
-tab1_1, tab1_2 = st.tabs('['Image', 'Code']')
+tab1_1, tab1_2 = st.tabs(['Image', 'Code'])
 
 with tab1_1:
   from PIL import Image
@@ -23,7 +23,7 @@ with tab1_2:
 ##### st.markdown
 st.header('2. Using `st.markdown`')
 
-tab2_1, tab2_2 = st.tabs('['Image', 'Code']')
+tab2_1, tab2_2 = st.tabs(['Image', 'Code'])
 
 with tab2_1:
   # img_to_bytes and img_to_html inspired from https://pmbaumgartner.github.io/streamlitopedia/sizing-and-images.html
