@@ -15,7 +15,16 @@ st.code('''from PIL import Image
 
 st.header('2. Using `st.markdown`')
 
-st.markdown('<img src="streamlit-logo-secondary-colormark-darktext.png">', unsafe_allow_html=True)
+# Source: https://pmbaumgartner.github.io/streamlitopedia/sizing-and-images.html
+def img_to_bytes(img_path):
+    img_bytes = Path(img_path).read_bytes()
+    encoded = base64.b64encode(img_bytes).decode()
+    return encoded
+def img_to_html(img_path):
+    img_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(
+      img_to_bytes(img_path)
+    )
+    return img_html
 
-st.code('''st.markdown('<img src="streamlit-logo-secondary-colormark-darktext.png">', unsafe_allow_html=True)
-''')
+st.markdown(img_to_html('streamlit-logo-secondary-colormark-darktext.png'), unsafe_allow_html=True)
+
