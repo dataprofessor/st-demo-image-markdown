@@ -3,7 +3,7 @@ import streamlit as st
 st.title('🎈 **Different ways to display images**')
 
 ##### st.image
-st.header('1. Using `st.image`')
+st.header('**1. Using `st.image`**')
 
 tab1_1, tab1_2 = st.tabs(['Image', 'Code'])
 
@@ -21,7 +21,7 @@ st.image(img)
 
 
 ##### st.markdown
-st.header('2. Using `st.markdown`')
+st.header('**2. Using `st.markdown`**')
 
 tab2_1, tab2_2 = st.tabs(['Image', 'Code'])
 
