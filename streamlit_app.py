@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('🎈 Different ways to display images')
+st.title('🎈 **Different ways to display images**')
 
 ##### st.image
 st.header('1. Using `st.image`')
