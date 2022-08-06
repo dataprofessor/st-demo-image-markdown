@@ -19,6 +19,7 @@ st.code('''from PIL import Image
 st.header('2. Using `st.markdown`')
 
 # Source: https://pmbaumgartner.github.io/streamlitopedia/sizing-and-images.html
+import base64
 from pathlib import Path
 
 def img_to_bytes(img_path):
